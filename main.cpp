@@ -20,7 +20,7 @@ void solveQuadEquation(float a, float b, float c){
 int main(){
     float a = 1;
     float b = 4;
-    float c = 2;
+    float c = 4;
     solveQuadEquation(a, b, c);
     std::cout << "Solved" << std::endl;
     return 0;

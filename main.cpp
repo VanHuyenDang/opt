@@ -9,7 +9,6 @@ class quadEqSolver{
         double a;
         double b;
         double c;
-
         std::vector<double> sol{0,0};
     public:
         quadEqSolver(double par1, double par2, double par3){
@@ -38,7 +37,6 @@ std::vector<double> quadEqSolver:: quadSolver() {
             double x2 = (-b - sqrt(discriminant)) / (2*a);
             this->sol[0] = x1;
             this->sol[1] = x2;
-            cout << "x1 = " << x1 << ", x2 = " << x2 << endl;
         }
         return sol;
     }

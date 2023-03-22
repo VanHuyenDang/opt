@@ -44,8 +44,13 @@ std::vector<double> quadEqSolver:: quadSolver() {
 int main()
 {
     double a, b, c;
-    cout << "Enter the coefficients a, b, and c: ";
-    cin >> a >> b >> c;
+    std::cout << "Enter the coefficient a: " << std::endl;
+    std::cin >> a;
+    std::cout << "Enter the coefficient b: " << std::endl;
+    std::cin >> b;
+    std::cout << "Enter the coefficient c: " << std::endl;
+    std::cin >> c;
+    std::cout << "-----------------------------" << std::endl;
     quadEqSolver solquad(a, b, c);
     auto result = solquad.quadSolver();
     std::cout << "First solution x1: " << result[0] << std::endl;
